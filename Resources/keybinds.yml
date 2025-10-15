@@ -208,12 +208,16 @@ binds:
 - function: ShuttleBrake
   type: State
   key: Space
-- function: CameraRotateLeft
+- function: CameraRotateLeft # samosbor edit - poshel nahui
   type: State
-  key: NumpadNum7
-- function: CameraRotateRight
+  key: Delete
+  mod1: Shift
+  mod2: Control
+- function: CameraRotateRight # samosbor edit - poshel nahui
   type: State
-  key: NumpadNum9
+  key: Delete
+  mod1: Alt
+  mod2: Control
 - function: CameraReset
   type: State
   key: NumpadNum8
