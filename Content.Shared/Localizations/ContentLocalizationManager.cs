@@ -31,7 +31,8 @@ namespace Content.Shared.Localizations
         [Dependency] private readonly ILocalizationManager _loc = default!;
 
         // If you want to change your codebase's language, do it here.
-        private const string Culture = "en-US";
+        private const string Culture = "ru-RU"; // Samosbor-Localization
+        private const string FallbackCulture = "en-US"; // Samosbor-Localization
 
         /// <summary>
         /// Custom format strings used for parsing and displaying minutes:seconds timespans.
@@ -47,8 +48,12 @@ namespace Content.Shared.Localizations
         public void Initialize()
         {
             var culture = new CultureInfo(Culture);
+            var fallbackCulture = new CultureInfo(FallbackCulture); // Samosbor-Localization
 
             _loc.LoadCulture(culture);
+            _loc.LoadCulture(fallbackCulture); //Samosbor-Localization
+            _loc.SetFallbackCluture(fallbackCulture); // Samosbor-Localization
+            _loc.AddFunction(culture, "MANY", FormatMany); // Samosbor-Localization: To prevent problems in auto-generated locale files
             _loc.AddFunction(culture, "PRESSURE", FormatPressure);
             _loc.AddFunction(culture, "POWERWATTS", FormatPowerWatts);
             _loc.AddFunction(culture, "POWERJOULES", FormatPowerJoules);

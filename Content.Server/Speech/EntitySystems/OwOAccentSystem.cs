@@ -29,6 +29,8 @@ namespace Content.Server.Speech.EntitySystems
         private static readonly IReadOnlyDictionary<string, string> SpecialWords = new Dictionary<string, string>()
         {
             { "you", "wu" },
+            { "ты", "ти" }, // Reserve-Localization
+            { "нет", "кремируйте меня" }, // lol localization
         };
 
         public override void Initialize()
@@ -44,6 +46,8 @@ namespace Content.Server.Speech.EntitySystems
             }
 
             return message.Replace("!", _random.Pick(Faces))
+                .Replace("р", "в").Replace("Р", "В") // samosbor locale
+                .Replace("л", "в").Replace("Л", "В") // samosbor locale
                 .Replace("r", "w").Replace("R", "W")
                 .Replace("l", "w").Replace("L", "W");
         }
