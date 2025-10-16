@@ -138,6 +138,10 @@
     penetrateDamage: 15 # Kill million mices
     damagePenalty: 0.05
   - type: StunVisuals
+  - type: EyeCursorOffset # samosbor change
+    maxOffset: 0.1
+    pvsIncrease: 0.0001
+    offsetSpeed: 0.01
 
 - type: entity
   save: false

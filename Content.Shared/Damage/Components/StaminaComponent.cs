@@ -55,7 +55,7 @@ public sealed partial class StaminaComponent : Component
     /// How much time after receiving damage until stamina starts decreasing.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
-    public float Cooldown = 5f; // goob edit
+    public float Cooldown = 15f; // samosbor edit - kill sprinting + stunmeta godo
 
     /// <summary>
     /// How much stamina damage this entity has taken.
