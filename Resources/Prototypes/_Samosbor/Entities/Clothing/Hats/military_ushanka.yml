@@ -1,0 +1,55 @@
+- type: entity
+  parent: [ClothingHeadBase, BaseFoldable] # todo contra
+  id: ClothingHeadHatUshankaMilitary
+  name: военная ушанка
+  description: Старая добрая советская ушанка. Имеет твердые металические пластины что защищают голову.
+  suffix: samosbor
+  components:
+  - type: Clothing
+    sprite: _Samosbor/Clothing/Head/military-ushanka.rsi
+  - type: Appearance
+  - type: AddAccentClothing # 1984
+    accent: RussianAccent
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: FoldableClothing
+    foldedEquippedPrefix: up
+    foldedHeldPrefix: up
+  - type: Sprite
+    sprite: _Samosbor/Clothing/Head/military-ushanka.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-up
+      map: [ "foldedLayer" ]
+      visible: false
+  - type: Armor
+    coverage:
+    - Head
+    traumaDeductions:
+      Dismemberment: 0.3
+      OrganDamage: 0.3
+      BoneDamage: 0.3
+      VeinsDamage: 0
+      NerveDamage: 0
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.3
+        Piercing: 0.3
+        Heat: 0.3
+        Radiation: 0.75
+        Caustic: 0.75
+  - type: ExplosionResistance
+    damageCoefficient: 0.75
+
+- type: entity
+  parent: ClothingHeadHatUshankaMilitary
+  id: ClothingHeadHatUshankaMilitaryValid
+  suffix: samosbor
+  description: Старая добрая ушанка. Имеет твердые металические пластины что защищают голову.
+  components:
+  - type: Clothing
+    sprite: _Samosbor/Clothing/Head/military-ushanka-rebel.rsi
+  - type: Sprite
+    sprite: _Samosbor/Clothing/Head/military-ushanka-rebel.rsi
