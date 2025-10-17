@@ -1,0 +1,6 @@
+#- type: bowlRecipe
+#  id: MushroomStew
+#  productEntity: FoodMeatDragonCutletCooked # todo
+#  time: 20 # todo
+#  solids:
+#    FoodSpaceshroom: 2

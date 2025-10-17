@@ -1,0 +1,10 @@
+- type: entity
+  parent: BaseItem
+  id: SamosborCombine
+  name: комбайн нахуй
+  description: Какой нахуй комбайн, буржуйство нахуй!!
+  suffix: samosbor
+  components:
+  - type: Sprite
+    sprite: _Samosbor/Shit/FuckYouFrolik/shit.rsi
+    state: shit

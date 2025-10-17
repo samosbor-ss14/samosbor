@@ -1,0 +1,35 @@
+#- type: entity
+#  parent: BaseStructure
+#  id: SamosborCookingBowl
+#  name: металический таз
+#  description: плейсхолдер # todooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+#  suffix: samosbor
+#  components:
+#  - type: Sprite
+#    sprite: _Samosbor/Structures/Cooking/bowl.rsi
+#    state: icon
+#  - type: CookingBowl
+#  - type: ContainerContainer
+#    containers:
+#      cooking_bowl_container: !type:Container
+#        showEnts: false
+#        occludes: true
+#  - type: ItemSlots
+#    slots:
+#      cooking_bowl_container:
+#        name: Cooking Bowl
+#        whitelist:
+#          prototypes:
+#          - FoodMushroom
+#          - FoodCarrot
+#          - FoodPotato
+#          - FoodTomato
+#          - FoodMeat
+#  - type: Destructible
+#    thresholds:
+#      - trigger:
+#          !type:DamageTrigger
+#          damage: 50
+#          behaviors:
+#          - !type:DoActsBehavior
+#            acts: ["Breakage"]

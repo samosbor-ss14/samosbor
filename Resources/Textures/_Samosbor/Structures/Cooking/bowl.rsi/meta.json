@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "made by LuciferEOS for samosbor, placeholder taken from https://www.freepik.com/premium-vector/pixel-art-noodle-bowl-game-asset-design_419520643.htm",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        }
+    ]
+}
