@@ -37,7 +37,7 @@
         Blunt: 0.7
         Slash: 0.7
         Piercing: 0.7
-        Heat: 0.7
+        Heat: 0.9
         Radiation: 0.75
         Caustic: 0.75
   - type: ExplosionResistance
@@ -46,7 +46,7 @@
 - type: entity
   parent: ClothingHeadHatUshankaMilitary
   id: ClothingHeadHatUshankaMilitaryValid
-  suffix: samosbor, valid
+  suffix: samosbor, VALID
   description: Старая добрая ушанка. Имеет твердые металические пластины что защищают голову.
   components:
   - type: Clothing
